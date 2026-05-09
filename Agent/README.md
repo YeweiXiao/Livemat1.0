@@ -1,4 +1,4 @@
-# LiveMat-X Research Assistant Retrieval System (Paper Release)
+# LiveMat-1.5 Research Assistant Retrieval System (Paper Release)
 
 This folder is a standalone, publication-oriented package for the retrieval subsystem used by the research assistant.
 It is prepared for direct upload to GitHub as supplementary paper material.
