@@ -1,0 +1,360 @@
+/* TemplateCards — premium extraction result cards */
+
+.card {
+    margin: 16px 0;
+    background: color-mix(in srgb, var(--bg-secondary) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--border-primary) 50%, transparent);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ─── Header ─────────────────────────────────────── */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid color-mix(in srgb, var(--border-primary) 30%, transparent);
+}
+
+.headerIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.extractIcon {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.headerContent {
+    flex: 1;
+    min-width: 0;
+}
+
+.headerTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.headerSubtitle {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.headerBadge {
+    font-size: 11px;
+    color: #10b981;
+    background: color-mix(in srgb, #10b981 10%, transparent);
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* ─── ID Row ─────────────────────────────────────── */
+
+.idRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: color-mix(in srgb, var(--bg-primary) 50%, transparent);
+}
+
+.idButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid color-mix(in srgb, var(--border-primary) 50%, transparent);
+    border-radius: 6px;
+    padding: 3px 8px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.15s;
+}
+
+.idButton:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+.idCode {
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+    font-size: 11px;
+}
+
+/* ─── Fields Section ─────────────────────────────── */
+
+.fieldsSection {
+    padding: 12px 16px;
+}
+
+.fieldsLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.fieldsList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.fieldItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 10px;
+    background: color-mix(in srgb, var(--bg-primary) 60%, transparent);
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--border-primary) 20%, transparent);
+}
+
+.fieldIndex {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background: color-mix(in srgb, #6366f1 12%, transparent);
+    color: #6366f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.fieldInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.fieldName {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.requiredDot {
+    color: #ef4444;
+    margin-left: 2px;
+}
+
+.fieldMeta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 3px;
+}
+
+.fieldDesc {
+    font-size: 11px;
+    color: var(--text-tertiary, var(--text-secondary));
+    line-height: 1.3;
+}
+
+/* ─── Footer ─────────────────────────────────────── */
+
+.footer {
+    padding: 10px 16px;
+    border-top: 1px solid color-mix(in srgb, var(--border-primary) 20%, transparent);
+    background: color-mix(in srgb, var(--bg-primary) 30%, transparent);
+}
+
+/* ─── Extraction Results ─────────────────────────── */
+
+.resultsList {
+    padding: 4px 0;
+}
+
+.resultItem {
+    border-bottom: 1px solid color-mix(in srgb, var(--border-primary) 20%, transparent);
+}
+
+.resultItem:last-child {
+    border-bottom: none;
+}
+
+.resultHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text-primary);
+    transition: background 0.15s;
+}
+
+.resultHeader:hover {
+    background: color-mix(in srgb, var(--bg-primary) 60%, transparent);
+}
+
+.resultIndex {
+    width: 22px;
+    height: 22px;
+    border-radius: 7px;
+    background: color-mix(in srgb, #3b82f6 10%, transparent);
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.resultTitle {
+    flex: 1;
+    min-width: 0;
+}
+
+.resultPaperTitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resultPaperId {
+    font-size: 10px;
+    color: var(--text-secondary);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.expandIcon {
+    font-size: 10px;
+    color: var(--text-secondary);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.expanded {
+    transform: rotate(90deg);
+}
+
+/* ─── Result Body ────────────────────────────────── */
+
+.resultBody {
+    padding: 0 16px 12px;
+    overflow: hidden;
+}
+
+.errorMsg {
+    padding: 8px 12px;
+    background: color-mix(in srgb, #ef4444 8%, transparent);
+    border: 1px solid color-mix(in srgb, #ef4444 20%, transparent);
+    border-radius: 8px;
+    color: #ef4444;
+    font-size: 12px;
+}
+
+.fieldsTable {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: color-mix(in srgb, var(--border-primary) 20%, transparent);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tableRow {
+    display: flex;
+    background: var(--bg-primary);
+}
+
+.tableKey {
+    width: 140px;
+    flex-shrink: 0;
+    padding: 7px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: color-mix(in srgb, var(--bg-secondary) 40%, transparent);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    word-break: break-all;
+}
+
+.tableValue {
+    flex: 1;
+    padding: 7px 12px;
+    font-size: 12px;
+    color: var(--text-primary);
+    min-width: 0;
+}
+
+.nullValue {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 11px;
+}
+
+.boolValue {
+    font-weight: 500;
+}
+
+.numValue {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    color: #10b981;
+    font-weight: 500;
+}
+
+.strValue {
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.arrayValue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.arrayTag {
+    font-size: 11px !important;
+    line-height: 18px !important;
+    padding: 0 6px !important;
+    margin: 0 !important;
+    border-radius: 4px !important;
+}
+
+.jsonValue {
+    margin: 0;
+    padding: 6px 8px;
+    background: color-mix(in srgb, var(--bg-secondary) 60%, transparent);
+    border-radius: 6px;
+    font-size: 11px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.4;
+    max-height: 200px;
+    overflow-y: auto;
+}
