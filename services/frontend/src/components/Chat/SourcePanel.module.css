@@ -1,0 +1,234 @@
+/* SourcePanel — clean reference design */
+
+.container {
+    padding: 14px 12px;
+    height: 100%;
+    overflow-y: auto;
+    background: transparent;
+}
+
+.container::-webkit-scrollbar { width: 3px; }
+.container::-webkit-scrollbar-track { background: transparent; }
+.container::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--border-primary) 35%, transparent);
+    border-radius: 999px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    padding: 0 4px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerIcon {
+    color: #3b82f6;
+    font-size: 14px;
+}
+
+.headerTitle {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-primary);
+    letter-spacing: 0.01em;
+}
+
+.headerCount {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    background: color-mix(in srgb, var(--bg-tertiary) 70%, transparent);
+    border-radius: 999px;
+    padding: 2px 8px;
+    min-width: 22px;
+    text-align: center;
+}
+
+.emptyContainer {
+    padding: 32px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyContainer :global(.ant-empty-description) {
+    color: var(--text-secondary) !important;
+}
+
+.sourceList {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sourceGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.groupLabel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    padding: 8px 6px 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.groupCount {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    background: color-mix(in srgb, var(--bg-tertiary) 50%, transparent);
+    border-radius: 999px;
+    padding: 0 6px;
+    line-height: 16px;
+}
+
+/* ── Card ── */
+
+.sourceCard {
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    background: var(--bg-secondary);
+    border: 1px solid color-mix(in srgb, var(--border-primary) 18%, transparent);
+}
+
+.sourceCard:hover {
+    background: color-mix(in srgb, var(--bg-secondary) 90%, rgba(59, 130, 246, 0.03));
+    border-color: color-mix(in srgb, var(--border-primary) 40%, rgba(59, 130, 246, 0.12));
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.cardTop {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.sourceIndex {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 11px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    line-height: 1;
+}
+
+.sourceTitle {
+    flex: 1;
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ── Paper metadata row ── */
+
+.cardMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    padding: 4px 0 4px 30px;
+}
+
+.metaItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 10.5px;
+    color: var(--text-secondary);
+    line-height: 1.3;
+    max-width: 100%;
+}
+
+.metaIcon {
+    font-size: 10px;
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.metaText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 160px;
+}
+
+/* ── Bottom row ── */
+
+.cardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    padding-top: 6px;
+    padding-left: 30px;
+    border-top: 1px solid color-mix(in srgb, var(--border-primary) 18%, transparent);
+}
+
+.typeChip {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+
+.similarityBadge {
+    font-size: 10px;
+    font-weight: 700;
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.07);
+    padding: 2px 7px;
+    border-radius: 999px;
+    letter-spacing: -0.01em;
+}
+
+/* ── Highlighted state ── */
+
+.sourceCardHighlighted {
+    border-color: rgba(59, 130, 246, 0.4) !important;
+    background: rgba(59, 130, 246, 0.06) !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12), 0 4px 12px rgba(59, 130, 246, 0.08) !important;
+    animation: highlightPulse 0.5s ease-out;
+}
+
+@keyframes highlightPulse {
+    0% { transform: scale(1.015); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .container { padding: 10px; }
+    .cardMeta { padding-left: 0; }
+    .cardBottom { padding-left: 0; }
+}
