@@ -28,3 +28,15 @@ Constraint-guided candidate ranking
 Rank candidate microorganisms, materials and four-component living materials systems under application-specific constraints.
 Wound-healing case study analysis
 Evaluate candidate living materials systems for acute wound healing, including antibacterial activity, oxygen supply, therapeutic synergy, interface stabilization, biosafety, process compatibility and overall fitness.
+License
+
+This repository is released for academic and research use. Please refer to the LICENSE file for details.
+
+Contact
+
+For questions about the code, data or manuscript, please contact:
+
+Ziyi Yu
+State Key Laboratory of Materials-Oriented Chemical Engineering
+Nanjing Tech University
+Email: ziyi.yu@njtech.edu.cn
