@@ -12,21 +12,21 @@ LiveMat addresses this challenge by reconstructing living materials knowledge fr
 
 This repository supports the following functions:
 
-Literature and database processing
+## Literature and database processing
 Retrieve and organize literature-derived information related to living materials, microorganisms, polymers, fabrication strategies, functional outputs and experimental contexts.
-Document classification
+## Document classification
 Classify records into living materials-relevant categories and filter domain-relevant information for downstream extraction.
-Structured information extraction
+## Structured information extraction
 Extract biological, material, functional and experimental features from text, tables and figures.
-Knowledge graph construction
+## Knowledge graph construction
 Standardize extracted entities and build relational representations linking living components, abiotic matrices, fabrication methods, functional outputs, evaluation contexts and performance metrics.
-Large language model benchmarking
+## Large language model benchmarking
 Compare large language models in terms of response time, token consumption, accuracy, precision, recall and feature-level reasoning performance across microorganism, material and living materials tasks.
-Design-space reconstruction
+## Design-space reconstruction
 Reconstruct material and microorganism design spaces using feature encoding, dimensionality reduction, clustering, density mapping and coverage analysis.
-Constraint-guided candidate ranking
+## Constraint-guided candidate ranking
 Rank candidate microorganisms, materials and four-component living materials systems under application-specific constraints.
-Wound-healing case study analysis
+## Wound-healing case study analysis
 Evaluate candidate living materials systems for acute wound healing, including antibacterial activity, oxygen supply, therapeutic synergy, interface stabilization, biosafety, process compatibility and overall fitness.
 # License
 
